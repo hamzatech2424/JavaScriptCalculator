@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+        <title>Hello, World!</title>
+   <script>
+       
+       
+    function getClear(){
+
+var name = document.getElementById("demo");
+
+name.value="";
+
+}   
+       
+       
+ function getResult(){
+
+var name = document.getElementById("demo");
+
+name.value=eval(name.value);
+
+}     
+       
+ 
+function getNumber(num){
+
+var name = document.getElementById("demo");
+
+name.value += num;
+
+}   
+
+
+
+
+
+
+
+      
+       
+       
+       
+       
+       
+       
+   </script>     
+       
+       
+  <style>
+        
+ .main{
+
+ border:2px solid grey;       
+ height:200px; 
+ width:165px;  
+ margin:0px auto; 
+ }     
+      
+ .btn{ background-color:grey; color:white; width:38px; margin-bottom:10px;}    
+      
+      
+ .btn1{ background-color:grey; color:white; width:80px}   
+      
+  .btn12{ background-color:blue; color:white; width:80px} 
+      
+ .btn13{ background-color:red; color:white; width:100%}   
+
+  
+      
+  </style>     
+        
+     
+    </head>
+    <body>
+   
+       
+      <br><br><br><br><br><br>
+      <div class="main"> 
+        
+        <br>
+        
+        <div>
+        <input type="text" id="demo">    
+            
+        </div>
+        
+        
+        <br>
+        
+      <div><button class="btn13" onclick="getClear()" >C</button></div>
+       
+      <br>  
+      
+      <div> <button class="btn" onclick="getNumber(7)">7</button>
+           
+        <button class="btn" onclick="getNumber(8)">8</button>
+        
+        <button class="btn" onclick="getNumber(9)">9</button>
+        
+        <button class="btn" onclick="getNumber('+')">+</button>
+        
+        </div>  
+     
+        
+   <div> <button class="btn" onclick="getNumber(6)">6</button>
+           
+        <button class="btn" onclick="getNumber(5)">5</button>
+        
+        <button class="btn" onclick="getNumber(4)">4</button>
+        
+        <button class="btn" onclick="getNumber('-')" >-</button>
+        
+        </div>  
+          
+    
+   <div>     
+        
+   <button class="btn" onclick="getNumber(3)">3</button>
+           
+        <button class="btn" onclick="getNumber(2)">2</button>
+        
+        <button class="btn" onclick="getNumber(1)" >1</button>
+        
+        <button class="btn" onclick="getNumber('*')" >*</button>
+        
+        </div>  
+           
+        
+     <div>     
+        
+   <button class="btn1" onclick="getNumber(0)">0</button>
+           
+   <button class="btn12" onclick="getResult()">=</button>
+ 
+       
+        
+        </div>  
+        
+        
+      
+       
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+     </div>   
+        
+    </body>
+</html>
